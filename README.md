@@ -1,73 +1,136 @@
-# Welcome to your Lovable project
+# Graph Plotter - Visualize & Solve Pro
 
-## Project info
+A powerful, interactive graph plotting application built with React, TypeScript, and Three.js. Visualize mathematical functions in 2D and 3D, solve equations, and explore mathematical concepts with an intuitive interface.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Features
 
-## How can I edit this code?
+- **2D Graphing**: Plot functions on a 2D canvas with interactive zooming and panning
+- **3D Graphing**: Visualize functions in 3D space using Three.js
+- **Equation Solver**: Solve mathematical equations with built-in solver tools
+- **Equation Panel**: Input and manage multiple equations
+- **Toolbar**: Access various graphing tools and options
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
+- **Dark/Light Mode**: Toggle between themes for comfortable viewing
+- **Export Options**: Save graphs as images or data files
 
-There are several ways of editing your application.
+## Technologies Used
 
-**Use Lovable**
+- **Frontend**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS with shadcn/ui components
+- **3D Graphics**: Three.js with @react-three/fiber
+- **State Management**: React Query for data fetching
+- **Testing**: Vitest for unit testing
+- **Linting**: ESLint for code quality
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Installation
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js (version 16 or higher)
+- npm or yarn package manager
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Setup
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. **Clone the repository**
 
-Follow these steps:
+   ```bash
+   git clone <YOUR_GIT_URL>
+   cd visualize-solve-pro-main
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+2. **Install dependencies**
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+   ```bash
+   npm install
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+3. **Start the development server**
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**
+
+   Navigate to `http://localhost:5173` to view the application.
+
+## Usage
+
+1. **Launch the app** using the development server
+2. **Input equations** in the Equation Panel
+3. **Select graphing mode** (2D or 3D) from the toolbar
+4. **Interact with graphs** using mouse controls (zoom, rotate, pan)
+5. **Use the solver** to find roots, intersections, or other solutions
+6. **Export results** as needed
+
+### Keyboard Shortcuts
+
+- `Ctrl+Z`: Undo last action
+- `Ctrl+Y`: Redo action
+- `Space`: Toggle play/pause for animations
+
+## Development
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run build:dev` - Build in development mode
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+- `npm run test` - Run tests once
+- `npm run test:watch` - Run tests in watch mode
+
+### Project Structure
+
+```
+src/
+├── components/
+│   ├── graph/
+│   │   ├── Canvas2D.tsx      # 2D graphing component
+│   │   ├── Graph3D.tsx       # 3D graphing component
+│   │   ├── EquationPanel.tsx # Equation input panel
+│   │   ├── SolverPanel.tsx   # Equation solver
+│   │   └── Toolbar.tsx       # Graphing tools
+│   └── ui/                   # shadcn/ui components
+├── hooks/                    # Custom React hooks
+├── lib/
+│   ├── mathEngine.ts         # Mathematical computations
+│   └── utils.ts              # Utility functions
+├── pages/                    # Application pages
+└── test/                     # Test files
 ```
 
-**Edit a file directly in GitHub**
+## Contributing
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+We welcome contributions! Please follow these steps:
 
-**Use GitHub Codespaces**
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Development Guidelines
 
-## What technologies are used for this project?
+- Follow TypeScript best practices
+- Write tests for new features
+- Ensure code passes linting
+- Update documentation as needed
 
-This project is built with:
+## Testing
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Run the test suite:
 
-## How can I deploy this project?
+```bash
+npm run test
+```
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+For continuous testing during development:
 
-## Can I connect a custom domain to my Lovable project?
+```bash
+npm run test:watch
+```
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Deployment
