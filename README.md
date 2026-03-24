@@ -35,7 +35,7 @@ A powerful, interactive graph plotting application built with React, TypeScript,
 1. **Clone the repository**
 
    ```bash
-   git clone <YOUR_GIT_URL>
+   git clone https://github.com/ShivamMathtech/GraphPlotter.git
    cd visualize-solve-pro-main
    ```
 
